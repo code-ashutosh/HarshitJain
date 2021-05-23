@@ -1,9 +1,266 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="loader.css"/>
+      <script src="loader.js"></script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                box-sizing: inherit;
+            }
+            body {
+                
+                margin: 0;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            body {
+                display: block;
+                margin: 8px;
+            }
+            .logo {
+                font-size: 20px;
+                position: absolute;
+                top:20px;
+                left: 40px;
+            }
+            .nav {
+                align-content:right;
+                background-color: white; 
+                list-style-type: none;
+                position: absolute;
+                right:0px;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            .nav li {
+                display: inline-block;
+                list-style: none;
+                text-decoration: none;
+                font-size: 20px;
+                padding: 20px;
+            }
+            .nav li a{
+                text-decoration: none;
+            }
+            .main {
+                display:grid;
+            }
+            .main #home {
+                height:350px;
+                width:100%px
+            }
+            #rep {
+                margin-left: 8%;
+                margin-top: 10%;
+                font-family: "Montserrat Alternates",sans-serif;
+                font-size:25px;
+            }
+            .big {
+                margin-left: 10%;
+                font-family: "Rock Salt",cursive;
+                font-size: 75px;
+            }
+            #a {
+                display: block;
+                position: absolute;
+                left:5%;
+                bottom:0px;
+                height: 70%;
+                width: 50%;
+                margin:5px;
+            }
+            #b{
+                display: block;
+                max-width: 90%;
+                height: auto;
+                margin: 20px; 
+            }
+            .main2 {
+                margin-top: 24%;
+                width:1180px;
+            }
+            #c {
+                height: 132%;
+                width: 120%;
+            }
+            #rt {
+                position: absolute;
+                right:0px;
+                margin: 15px;
+                text-align: center;
+            }
+            .skills-heading {
+                font-size: 56px;
+                font-weight: 400;
+                padding: 20px;
+                font-family: "Graduate",cursive;
+                font-size: 40px;
+            }
+            .dev-icons {
+                text-align: center;
+            }
+            .dev-icons li{
+                list-style: none;
+                display: inline-block;
+                padding: 2px;
+                align-items: center;
+            }
+            .subTitle {
+                color: #868e96;
+            }
+            .skills-text {
+                font-size: 23px;
+                font-family: "Long Cang",cursive;
+                padding: 10px;
+            }
+            .main3 {
+                margin-top: 20%;
+            }
+            #tr {
+                position: absolute;
+                left:0px;
+                margin: 15px;
+                text-align: center;
+            }
+            .project-headings {
+                font-size: 400px;
+                font-weight: 500;
+                padding-top: 30%;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 40px;
+            }
+            #git {
+                position: absolute;
+                right:0px;
+            }
+            #d{
+                position: absolute;
+                right:0px;
+                display: block;
+                max-width: 90%;
+                height: auto;
+                margin: 20px; 
+            }
+            .project-text {
+                padding-top: 30px;
+                text-align: center;
+                font-size: 23px;
+                font-family: "Long Cang",cursive;
+                padding: 10px;
+            }
+        </style>
     </head>
+    
     <body>
-        <h1>site is live</h1>
+        <!-- <div class="loader">
+            <div class="image">
+              <i class="fa fa-codepen"></i>
+            </div>
+            <span></span>
+        </div> -->
+        <header>
+            <div class="headroom-wrapper" style="height: 82px;">
+                <div class="headroom headroom--unfixed" style="position: relative; top: 0px; left: 0px; right: 0px; z-index: 1; transform: translate3d(0px, 0px, 0px);">
+                    <header class="header">
+                        <a href="" class="logo" ><span class="grey-color"> &lt;</span><span class="logo-name">Harshit</span><span class="grey-color">/&gt;</span></a><input class="menu-btn" type="checkbox" id="menu-btn"><label class="menu-icon" for="menu-btn" style="color: white;"><span class="navicon"></span></label>
+                        <ul class="nav" style="list-style: none;   display: inline-block;">
+                            <li><a href="#experience">Work Experiences</a></li>
+                            <li><a href="#achievements">Achievements</a></li>
+                            <li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                            <li><a class="sc-gKsewC gnwqMi navbar__resumebutton" href="/resume">Resume</a></li>
+                        </ul>
+                    </header>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="row" id="home">
+                <div class="col-md-5">
+                    <p id='rep'>
+                        <span class="big">👋 Hey Folks!, </span> <span class="big">I'm Harshit<br></span>
+                       A Full Stack 🚀 Python Developer <br> 
+                        and Machine Learning Enthusiast😍 <br>
+                        have Experience with Python / Data Science<br>
+                         / JavaScript / Django / React / SQL <br>
+                           and with Some Cool Stuffs!
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img id="b" src="124305554-porgrammer-sitting-at-desk-and-working-on-laptop-computer-web-developer-workplace-software-programmi.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="main2" id="skills">
+            <div class="row">
+                <div class="col-md-5">
+                    <img id="c" src="web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg">
+                </div>
+                <div class="col-md-6" id="rt">
+                    <h1 class="skills-heading">What Skills I Have ?</h1>
+                    <div>
+                        <div class="software-skills-main-div">
+                            <ul class="dev-icons">
+                                <li class="software-skill-inline" name="html-5"><img src="https://img.icons8.com/dusk/64/000000/html-5.png"><p>html-5</p></li>
+                                <li class="software-skill-inline" name="css3"><img src="https://img.icons8.com/dusk/64/000000/css3.png" alt="css3"><p>css3</p></li>
+                                <li class="software-skill-inline" name="JavaScript"><img src="https://img.icons8.com/color/48/000000/javascript.png"><p>JavaScript</p></li>
+                                <li class="software-skill-inline" name="reactjs"><img src="https://img.icons8.com/dusk/64/000000/react.png"><p>reactjs</p></li>
+                                <li class="software-skill-inline" name="react-Native"><img src="https://img.icons8.com/cute-clipart/64/000000/react-native.png"><p>react-Native</p></li>
+                                <li class="software-skill-inline" name="nodejs"><img src="https://img.icons8.com/windows/32/000000/node-js.png"><p>nodejs</p></li>
+                                <li class="software-skill-inline" name="npm"><img src="https://img.icons8.com/color/48/000000/npm.png"><p>npm</p></li>
+                                <li class="software-skill-inline" name="Linux"><img src="https://img.icons8.com/dusk/64/000000/linux.png"><p>Linux</p></li>
+                                <li class="software-skill-inline" name="Material-ui"><img src="https://img.icons8.com/color/48/000000/material-ui.png"><p>Material-ui</p></li>
+                                <li class="software-skill-inline" name="firebase"><img src="https://img.icons8.com/color/48/000000/firebase.png"><p>firebase</p></li>
+                                <li class="software-skill-inline" name="python"><img src="https://img.icons8.com/nolan/64/python.png"><p>python</p></li>
+                                <li class="software-skill-inline" name="c"><img src="https://img.icons8.com/color/48/000000/c-programming.png"><p>c</p></li>
+                                <li class="software-skill-inline" name="Java"><img src="https://img.icons8.com/dusk/64/000000/java-coffee-cup-logo.png"><p>Java</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="subTitle skills-text"><img alt="🚀" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/1f680.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;"> Develop Backend Using Django, Django-Restframework, React and Postgresql! </p>
+                        <p class="subTitle skills-text"><img alt="🚀" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/1f680.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;"> You can find me integrating Webapp with machine learning model using Tensorflow.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main3" id="projects">
+            <div class="row">  
+                <div class="col-md-6" id="tr">
+                    <h1 class="project-headings">Projects</h1>
+                    <div >
+                        <p class="project-text"><img alt="🚀" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/1f680.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;"> 
+                            My projects makes use of vast variety of latest technology tools.
+                            My best experience is to create Data Science projects and deploy them
+                            to web applications using cloud infrastructure. </p>
+                    </div>
+                </div>
+                <div class="col-md-5" id="git">
+                    <img id="d" src="codercat.jpg">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <!-- <img id="a" src="men-wearing-glasses-holding-smart-phone-make-video-call-girl-on-screen-with-flat-cartoon-style-2C6D9HB.jpg"> -->
+            </div>
+        </footer>
+        <script>
+        
+        // $(window).load(function() {
+        //     $('.loader').fadeOut(16000);
+        //  });
+        </script> 
     </body>
 </html>
