@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
       <link rel="stylesheet" type="text/css" href="loader.css"/>
       <script src="loader.js"></script>
         <style>
             * {
-                margin: 0;
+                margin: 2px;
                 padding: 0;
                 box-sizing: border-box;
                 box-sizing: inherit;
             }
             body {
-                
-                margin: 0;
                 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
-            }
-            body {
                 display: block;
-                margin: 8px;
+                margin: 10px;
             }
             .logo {
                 font-size: 20px;
@@ -31,7 +30,7 @@
                 top:20px;
                 left: 40px;
             }
-            .nav {
+            #navbarSupportedContent {
                 align-content:right;
                 background-color: white; 
                 list-style-type: none;
@@ -51,12 +50,9 @@
             .nav li a{
                 text-decoration: none;
             }
-            .main {
-                display:grid;
-            }
-            .main #home {
-                height:350px;
-                width:100%px
+            img {
+                max-width: 100%;
+                max-height: auto;
             }
             #rep {
                 margin-left: 8%;
@@ -69,7 +65,7 @@
                 font-family: "Rock Salt",cursive;
                 font-size: 75px;
             }
-            #a {
+            /* #a {
                 display: block;
                 position: absolute;
                 left:5%;
@@ -84,20 +80,14 @@
                 height: auto;
                 margin: 20px; 
             }
-            .main2 {
-                margin-top: 24%;
-                width:1180px;
-            }
-            #c {
-                height: 132%;
-                width: 120%;
-            }
-            #rt {
+             */
+            
+            /* #rt {
                 position: absolute;
                 right:0px;
                 margin: 15px;
                 text-align: center;
-            }
+            } */
             .skills-heading {
                 font-size: 56px;
                 font-weight: 400;
@@ -122,15 +112,16 @@
                 font-family: "Long Cang",cursive;
                 padding: 10px;
             }
-            .main3 {
-                margin-top: 20%;
+            img {
+                max-width: 100%;
+                max-height: auto;
             }
-            #tr {
+            /* #tr {
                 position: absolute;
                 left:0px;
                 margin: 15px;
                 text-align: center;
-            }
+            } */
             .project-headings {
                 font-size: 400px;
                 font-weight: 500;
@@ -138,18 +129,22 @@
                 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 40px;
             }
-            #git {
+            /* #git {
                 position: absolute;
                 right:0px;
+            } */
+            img {
+                max-width: 100%;
+                max-height: auto;
             }
-            #d{
+            /* #d{
                 position: absolute;
                 right:0px;
                 display: block;
                 max-width: 90%;
                 height: auto;
                 margin: 20px; 
-            }
+            } */
             .project-text {
                 padding-top: 30px;
                 text-align: center;
@@ -167,7 +162,37 @@
             </div>
             <span></span>
         </div> -->
-        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                 <a href="" class="logo" ><span class="grey-color"> &lt;</span><span class="logo-name">Harshit</span><span class="grey-color">/&gt;</span></a><input class="menu-btn" type="checkbox" id="menu-btn"><label class="menu-icon" for="menu-btn" style="color: white;"><span class="navicon"></span></label>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-right me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Certifications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- <header>
             <div class="headroom-wrapper" style="height: 82px;">
                 <div class="headroom headroom--unfixed" style="position: relative; top: 0px; left: 0px; right: 0px; z-index: 1; transform: translate3d(0px, 0px, 0px);">
                     <header class="header">
@@ -182,7 +207,7 @@
                     </header>
                 </div>
             </div>
-        </header>
+        </header> -->
         <div class="main">
             <div class="row" id="home">
                 <div class="col-md-5">
@@ -246,7 +271,7 @@
                     </div>
                 </div>
                 <div class="col-md-5" id="git">
-                    <img id="d" src="codercat.jpg">
+                   <a href="https://github.com/harshit-labs"> <img id="d" src="codercat.jpg" ></a>
                 </div>
             </div>
         </div>
