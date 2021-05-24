@@ -89,6 +89,7 @@
                 text-align: center;
             } */
             .skills-heading {
+                text-align: center;
                 font-size: 56px;
                 font-weight: 400;
                 padding: 20px;
@@ -98,16 +99,12 @@
             .dev-icons {
                 text-align: center;
             }
-            .dev-icons li{
-                list-style: none;
-                display: inline-block;
-                padding: 2px;
-                align-items: center;
-            }
+            
             .subTitle {
                 color: #868e96;
             }
             .skills-text {
+                text-align: center;
                 font-size: 23px;
                 font-family: "Long Cang",cursive;
                 padding: 10px;
@@ -115,6 +112,18 @@
             img {
                 max-width: 100%;
                 max-height: auto;
+            }
+            .dev-icons li{
+                text-align: center;
+                list-style: none;
+                display: inline-block;
+                padding: 2px;
+                align-items: center;
+            }
+            .dev-icons li img {
+                height: 50px;
+                width: auto;
+                text-align: center;
             }
             /* #tr {
                 position: absolute;
@@ -151,6 +160,84 @@
                 font-size: 23px;
                 font-family: "Long Cang",cursive;
                 padding: 10px;
+            }
+            @import url('https://fonts.googleapis.com/css?family=Lobster');
+
+            .stackcard {
+                --bg-one: #973999;
+                --bg-two: #f8598b;
+                --bg-three: #f7bf00;
+                --bg-panel: #f3e7e7b7;
+                --color-headings: rgb(7, 6, 6);
+                --color-text: rgb(31, 29, 29);
+                --color-fun: #c44394;
+                --distance: 4rem;
+                background: var(--bg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(https://image.freepik.com/free-vector/smooth-mesh-blurred-background-multi-color-gradient-pattern-smooth-modern-watercolor-style-backdrop_124894-147.jpg);
+                font-family: 'Lobster', Helvetica, Arial, sans-serif;
+                height: 55vh;
+                width: 100%;
+                display: grid;
+                place-items: center;
+                overflow: hidden;
+                margin: 0;
+                z-index: 1;
+            }
+            .cards {
+                display: flex;
+                width:85vw;
+                height: 20vw;
+            }
+
+            .card {
+                z-index: 1;
+                background: var(--bg-panel);
+                border-radius: 1rem;
+                padding: 2rem;
+                box-shadow: 4px 4px 12px 2px rgba(black, 0.60);
+                transition: 0.2s;
+            .fa-stack {
+                color: var(--color-fun);
+            }
+            .card a {
+                text-decoration: none;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: var(--color-headings);
+            }
+            .card a p {
+                color: var(--color-text);
+                
+                }
+            }
+
+            .card:not(:first-child) {
+            margin-left: calc(var(--distance)*-1);
+            }
+
+            .card:hover,
+            .card:focus-within {
+                background: #f3e7e7ea;
+            transform: translatey(-1rem);
+            transform: rotateZ(-4deg);
+            box-shadow: inset 2px 2px 2px hsl(10deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+            background: linear-gradient(90deg,#f3e7e7ea;,#f3e7e7ea; 1px,#f3e7e7ea; 0,#f3e7e7ea;);
+
+            }
+
+            .card:hover ~ .card,
+            .card:focus-within ~ .card {
+            transform: translatex(var(--distance));
+            }
+            #a {
+                color:rgb(89, 93, 97);
+                text-decoration:None;
+                font-size: 40px;
+            }
+
+            .fa-stack {
+            margin-left: -1rem;
             }
         </style>
     </head>
@@ -192,22 +279,6 @@
               </div>
             </div>
           </nav>
-        <!-- <header>
-            <div class="headroom-wrapper" style="height: 82px;">
-                <div class="headroom headroom--unfixed" style="position: relative; top: 0px; left: 0px; right: 0px; z-index: 1; transform: translate3d(0px, 0px, 0px);">
-                    <header class="header">
-                        <a href="" class="logo" ><span class="grey-color"> &lt;</span><span class="logo-name">Harshit</span><span class="grey-color">/&gt;</span></a><input class="menu-btn" type="checkbox" id="menu-btn"><label class="menu-icon" for="menu-btn" style="color: white;"><span class="navicon"></span></label>
-                        <ul class="nav" style="list-style: none;   display: inline-block;">
-                            <li><a href="#experience">Work Experiences</a></li>
-                            <li><a href="#achievements">Achievements</a></li>
-                            <li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li>
-                            <li><a href="#contact">Contact Me</a></li>
-                            <li><a class="sc-gKsewC gnwqMi navbar__resumebutton" href="/resume">Resume</a></li>
-                        </ul>
-                    </header>
-                </div>
-            </div>
-        </header> -->
         <div class="main">
             <div class="row" id="home">
                 <div class="col-md-5">
@@ -235,20 +306,24 @@
                     <div>
                         <div class="software-skills-main-div">
                             <ul class="dev-icons">
+                                <li class="software-skill-inline" name="C++"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"><p>Java</p></li>
                                 <li class="software-skill-inline" name="html-5"><img src="https://img.icons8.com/dusk/64/000000/html-5.png"><p>html-5</p></li>
                                 <li class="software-skill-inline" name="css3"><img src="https://img.icons8.com/dusk/64/000000/css3.png" alt="css3"><p>css3</p></li>
                                 <li class="software-skill-inline" name="JavaScript"><img src="https://img.icons8.com/color/48/000000/javascript.png"><p>JavaScript</p></li>
-                                <li class="software-skill-inline" name="reactjs"><img src="https://img.icons8.com/dusk/64/000000/react.png"><p>reactjs</p></li>
-                                <li class="software-skill-inline" name="react-Native"><img src="https://img.icons8.com/cute-clipart/64/000000/react-native.png"><p>react-Native</p></li>
-                                <li class="software-skill-inline" name="nodejs"><img src="https://img.icons8.com/windows/32/000000/node-js.png"><p>nodejs</p></li>
-                                <li class="software-skill-inline" name="npm"><img src="https://img.icons8.com/color/48/000000/npm.png"><p>npm</p></li>
-                                <li class="software-skill-inline" name="Linux"><img src="https://img.icons8.com/dusk/64/000000/linux.png"><p>Linux</p></li>
-                                <li class="software-skill-inline" name="Material-ui"><img src="https://img.icons8.com/color/48/000000/material-ui.png"><p>Material-ui</p></li>
-                                <li class="software-skill-inline" name="firebase"><img src="https://img.icons8.com/color/48/000000/firebase.png"><p>firebase</p></li>
                                 <li class="software-skill-inline" name="python"><img src="https://img.icons8.com/nolan/64/python.png"><p>python</p></li>
+                                <li class="software-skill-inline" name="Django"><img src="https://pbs.twimg.com/profile_images/752207108750340096/CicamXxN_400x400.jpg"><p>Django</p></li>
+                                <li class="software-skill-inline" name="Django-Restframework"><img src="pgwkazyf2b5q8kqzxzda.jpg"><p>Django-Restframework</p></li>
+                                <li class="software-skill-inline" name="reactjs"><img src="https://img.icons8.com/dusk/64/000000/react.png"><p>reactjs</p></li>
+                                <li class="software-skill-inline" name="SQL"><img src="https://w7.pngwing.com/pngs/167/148/png-transparent-microsoft-azure-sql-database-microsoft-sql-server-database-blue-text-logo-thumbnail.png"><p>SQL</p></li>
+                                <li class="software-skill-inline" name="Tensorflow"><img src="https://miro.medium.com/max/688/1*zR61FG9RUd6ul4ecXA_euQ.jpeg"><p>Tensorflow</p></li>
                                 <li class="software-skill-inline" name="c"><img src="https://img.icons8.com/color/48/000000/c-programming.png"><p>c</p></li>
                                 <li class="software-skill-inline" name="Java"><img src="https://img.icons8.com/dusk/64/000000/java-coffee-cup-logo.png"><p>Java</p></li>
+                                <li class="software-skill-inline" name="PostGreSQL"><img src="https://i.pinimg.com/originals/4d/45/93/4d4593f4f134f3dfe61d065e62c8abe7.png"><p>PostGreSQL</p></li>
+                                <li class="software-skill-inline" name="Linux"><img src="https://img.icons8.com/dusk/64/000000/linux.png"><p>Linux</p></li>
+                                <li class="software-skill-inline" name="Git"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"><p>Git</p></li>
+                                <li class="software-skill-inline" name="Material-ui"><img src="https://img.icons8.com/color/48/000000/material-ui.png"><p>Material-ui</p></li>
                             </ul>
+                                
                         </div>
                     </div>
                     <div>
@@ -273,9 +348,62 @@
                 <div class="col-md-5" id="git">
                    <a href="https://github.com/harshit-labs"> <img id="d" src="codercat.jpg" ></a>
                 </div>
+                <div class="row stackcard">
+                    <div class="cards stack">
+                        <div class="col-md-2 card">
+                           <span class="fa-stack fa-3x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                          </span>   
+                          <h1><a href="#0" id="a">BlackPost</a></h1>
+                          <p>This is a social media app which  is created by using django, django <br>rest framework, integrated with react. In this person can share<br> the views with ther followers..</p>   
+                        </div>
+                        <div class="col-md-2 card">
+                           <span class="fa-stack fa-3x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                          </span>
+                          <h1><a href="#0" id="a">NewsHunt</a></h1>
+                          <p>This is a new app where you can find the latest and trending news in the<br> world. it fetches the json data from newsapi .</p>
+                        </div>
+                        <div class="col-md-2 card">
+                           <span class="fa-stack fa-3x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                          </span>
+                          <h1><a href="#0" id="a">Competitive<br>Programming</a></h1>
+                          <p>This is a repository of my Codechef and LeetCode Challenge Solution.</p>
+                        </div>
+                        <div class="col-md-2 card">
+                           <span class="fa-stack fa-3x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                          </span>
+                          <h1><a href="#0" id="a">Song App</a></h1>
+                          <p>This is a web app where users can listen songs.this is created by using<br> the API</p>
+                        </div>
+                        <a href="https://github.com/harshit-labs">
+                        <div class="col-md-2 card" style="width: 20vw;">
+                          <span class="fa-stack fa-3x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                          </span>
+                          <h1><a href="#0" id="a" >More Projects</a></h1>
+                          <p>For more projects click the card.</p>
+                        </div>
+                        </a>
+                      </div>
+                </div>
             </div>
         </div>
+        <div class="main4" id="Certifications">
+            <div class="row">
 
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
         <footer>
             <div class="row">
                 <!-- <img id="a" src="men-wearing-glasses-holding-smart-phone-make-video-call-girl-on-screen-with-flat-cartoon-style-2C6D9HB.jpg"> -->
