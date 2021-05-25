@@ -271,26 +271,25 @@
                 .cards {
                     display: grid;
                     max-width: 50%;
-                    padding-top: 2vw;
-                    padding-left: 15vw;
-                    padding-bottom: 2vw;
+                    /* padding: 0; */
                 }
                 #a {
-                color:rgb(89, 93, 97);
-                text-decoration:None;
-                font-size: 4vw;
-            }
+                    color:rgb(89, 93, 97);
+                    text-decoration:None;
+                    font-size: 4vw;
+                }
                 #p {
-                font-size: 2.5vw;
+                    font-size: 2.5vw;
+                }
+                .card:not(:first-child) {
+            margin-left: calc(var(--distance)*0);
             }
             }
-            @media(max-width: 768px) {
+            @media(max-width: 561px) {
                 .cards {
                     display: grid;
                     max-width: 50%;
-                    padding-top: 2vw;
-                    padding-left: 15vw;
-                    padding-bottom: 2vw;
+                   
                 }
                 #a {
                 color:rgb(89, 93, 97);
@@ -300,21 +299,45 @@
                 #p {
                 font-size: 2.5vw;
             }
+            .card:not(:first-child) {
+            margin-left: calc(var(--distance)*0);
+            }
+            }
+            .main4 {
+                align-items: center;
+                align-content: center;
+                text-align: center;
+            }
+            .main4 ul {
+                list-style: none;
+                display: inline;
+                align-items: center;
+                align-content: center;
+                text-align: center;
+            }
+            .main4 li {
+                text-align: center;
+                list-style: none;
+                display: inline-block;
+                align-items: center;
+                align-content: center;
+                text-align: center;
             }
             .flip-card {
-                background-color: white;
-                width: 250px;
-                height: 250px;
+                background-color: transparent;
+                width: 15vw;
+                height: 15vw;
                 perspective: 1000px;
                 margin: 4vw;
+                margin-left: 0;
                 margin-bottom: 0vw;
                 box-sizing: border-box;
                 border-radius: 100px;
             }
             .flip-card-front img{
-                background-color: white;
-                width: 250px;
-                height: 250px;
+                background-color: transparent;
+                width: 15vw;
+                height: 15vw;
             }
 
             .flip-card-inner {
@@ -342,7 +365,7 @@
             }
 
             .flip-card-front {
-                background-color: #bbb;
+                background-color: rgb(255, 255, 255);
                 color: black;
             }
 
@@ -359,6 +382,40 @@
                 text-align: center;
                 font-size: 40px;
                 font-family:'Times New Roman', Times, serif;
+            }
+            @media(max-width: 768px) {
+                .flip-card {
+                background-color: white;
+                width: 30vw;
+                height: 30vw;
+                perspective: 1000px;
+                margin: 2vw;
+                padding: 2vw;
+                box-sizing: border-box;
+                border-radius: 100px;
+            }
+                .flip-card-front img{
+                    background-color: white;
+                    width: 30vw;
+                    height: 29vw;
+                }
+            }
+            @media(max-width: 561px) {
+                .flip-card {
+                    background-color: white;
+                    width: 35vw;
+                    height: 35vw;
+                    perspective: 1000px;
+                    margin: 2vw;
+                    padding: 2vw;
+                    box-sizing: border-box;
+                    border-radius: 100px;
+                }
+                .flip-card-front img{
+                    background-color: white;
+                    width: 35vw;
+                    height: 30vw;
+                }
             }
             footer {
                 margin-top:14vw;
@@ -416,7 +473,7 @@
                   </li>
                 
                 </ul>
-                <a class="nav-link" href="#"><button id="ab">Resume</button></a>
+                <a class="nav-link" href="https://drive.google.com/file/d/1nn1AI623HbYNvDJa4LPsjR7Lq-ClSgb8/view?usp=sharing"><button id="ab">Resume</button></a>
               </div>
             </div>
           </nav>
@@ -432,7 +489,7 @@
                          / JavaScript / Django / React / SQL <br>
                            and with Some Cool Stuffs!<br>
                         <div class="row" style="margin-left:25%">
-                        <a class="nav-link" href="#"><button id="ab" style="display: inline-block;">Resume</button></a> 
+                        <a class="nav-link" href="https://drive.google.com/file/d/1nn1AI623HbYNvDJa4LPsjR7Lq-ClSgb8/view?usp=sharing"><button id="ab" style="display: inline-block;">Resume</button></a> 
                         <a class="nav-link" href="#"><button id="ab" style="display: inline-block;">Contact</button></a>
                         </div>
                         <ul class="dev-icons" >
@@ -503,7 +560,7 @@
                 </div>
                 <div class="row stackcard">
                     <div class="cards stack">
-                        <div class="col-md-2 card">
+                        <div class="col-md-2 card" id="ty">
                            <span class="fa-stack fa-3x">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
@@ -552,8 +609,8 @@
         <div class="main4" id="Certifications">
 
            <h1 class="certifications"> Certifications 🏆 And Swags 🔥</h1>
-            <div class="row">
-                <div class='col-md-2'>
+            <ul>
+                <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -565,8 +622,8 @@
                           </div>
                         </div>
                       </div>
-                </div>
-                <div class='col-md-2'>
+                </li>
+                <li >
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -578,8 +635,8 @@
                           </div>
                         </div>
                       </div>
-                </div>
-                <div class='col-md-2'>
+                </li>
+                <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -591,8 +648,8 @@
                           </div>
                         </div>
                       </div>
-                </div>
-                <div class='col-md-2'>
+                </li>
+                <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -604,11 +661,8 @@
                           </div>
                         </div>
                       </div>
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class='col-md-2'>
+                </li>
+                <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -620,8 +674,8 @@
                           </div>
                         </div>
                       </div>
-                </div>
-                <div class='col-md-2'>
+                </li>
+                <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -633,21 +687,21 @@
                           </div>
                         </div>
                       </div>
-                </div>
-                <div class='col-md-2'>
+                    </li>
+                <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="https://blog.kakaocdn.net/dn/8JXWq/btqxX6NUoWu/CnThtkXBR83X1zFs9MVupK/img.png" alt="Avatar">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Avatar">
                           </div>
                           <div class="flip-card-back">
                             <button type="submit"><a href="#">Certifications</a></button>  
                             <button type="submit"></button>
                           </div>
                         </div>
-                      </div>
-                </div>
-            </div>
+                    </div>
+                </li>
+                </ul>
         </div>
         <footer id="Contact">
             <div class="row">
