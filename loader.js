@@ -9,60 +9,54 @@ $(document).ready(function() {
   
       changeImage(counter);
       counter++;
-    }, 3000);
-  
-    // Set the percentage off
+    }, 900);
     loading();
   });
-  
+  var images = [
+    '<i class="fa fa-fighter-jet"></i>',
+    '<i class="fa fa-gamepad"></i>',
+    '<i class="fa fa-headphones"></i>',
+    '<i class="fa fa-cubes"></i>',
+    '<i class="fa fa-paw"></i>',
+    '<i class="fa fa-rocket"></i>',
+    '<i class="fa fa-ticket"></i>',
+    '<i class="fa fa-pie-chart"></i>',
+    '<i class="fa fa-codepen"></i>'
+  ];
   function changeImage(counter) {
-    var images = [
-      '<i class="fa fa-fighter-jet"></i>',
-      '<i class="fa fa-gamepad"></i>',
-      '<i class="fa fa-headphones"></i>',
-      '<i class="fa fa-cubes"></i>',
-      '<i class="fa fa-paw"></i>',
-      '<i class="fa fa-rocket"></i>',
-      '<i class="fa fa-ticket"></i>',
-      '<i class="fa fa-pie-chart"></i>',
-      '<i class="fa fa-codepen"></i>'
-    ];
-  
     $(".loader .image").html(""+ images[counter] +"");
   }
-  function delay(){
-    setInterval(function() {
-        
-      }, 1000);
-  }
+
   function loading(){
     var num = 0;
-  
     for(i=0; i<=100; i++) {
       setTimeout(function() { 
         if(num >=95 && num<=100) {
             $('.loader span').html(num+'%'+"<br></br>"+"I'm Here...");
+            changeImage(5);
         }
         else if(num>=0&&num<=25){
             $('.loader span').html(num+'%'+"<br></br>"+"I'm Waking up...");
-            delay();
+            changeImage(4);
         }
         else if(num>=26&&num<=40){
             $('.loader span').html(num+'%'+"<br></br>"+"I'm Having lunch...");
-            delay();
+            changeImage(0);
         }
         else if(num>=41&&num<=60){
             $('.loader span').html(num+'%'+"<br></br>"+"I'm Dressing...");
-            delay();
+            changeImage(3);
         }
         else if(num>=60&&num<=95){
             $('.loader span').html(num+'%'+"<br></br>"+"I'm on my way...");
+            changeImage(7);
         }
         if(num == 100){
-            loading();
+          $('.loader').hide();
+          $('.t').css("display","block");
         }
         num++;
-      },i*120);
+      },i*60);
     };
   
   }

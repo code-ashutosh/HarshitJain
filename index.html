@@ -10,7 +10,9 @@
         
       <link rel="stylesheet" type="text/css" href="loader.css"/>
       <script src="loader.js"></script>
+      <script src="load.js"></script>
         <style>
+            @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
             * {
                 margin: 2px;
                 padding: 0;
@@ -23,6 +25,9 @@
                 -moz-osx-font-smoothing: grayscale;
                 display: block;
                 margin: 10px;
+            }
+            .t {
+                display:none;
             }
             .logo {
                 font-size: 20px;
@@ -87,29 +92,6 @@
                 font-family: "Rock Salt",cursive;
                 font-size: 75px;
             }
-            /* #a {
-                display: block;
-                position: absolute;
-                left:5%;
-                bottom:0px;
-                height: 70%;
-                width: 50%;
-                margin:5px;
-            }
-            #b{
-                display: block;
-                max-width: 90%;
-                height: auto;
-                margin: 20px; 
-            }
-             */
-            
-            /* #rt {
-                position: absolute;
-                right:0px;
-                margin: 15px;
-                text-align: center;
-            } */
             .skills-heading {
                 text-align: center;
                 font-size: 56px;
@@ -147,12 +129,6 @@
                 width: auto;
                 text-align: center;
             }
-            /* #tr {
-                position: absolute;
-                left:0px;
-                margin: 15px;
-                text-align: center;
-            } */
             .project-headings {
                 font-size: 400px;
                 font-weight: 500;
@@ -160,22 +136,10 @@
                 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 40px;
             }
-            /* #git {
-                position: absolute;
-                right:0px;
-            } */
             img {
                 max-width: 100%;
                 max-height: auto;
             }
-            /* #d{
-                position: absolute;
-                right:0px;
-                display: block;
-                max-width: 90%;
-                height: auto;
-                margin: 20px; 
-            } */
             .project-text {
                 padding-top: 30px;
                 text-align: center;
@@ -210,8 +174,6 @@
       
             .cards {
                 display: flex;
-                /* width:85vw;
-                height: 20vw; */
                 padding:2vw 2vw 2vw 3vw;
             }
 
@@ -271,7 +233,6 @@
                 .cards {
                     display: grid;
                     max-width: 50%;
-                    /* padding: 0; */
                 }
                 #a {
                     color:rgb(89, 93, 97);
@@ -448,6 +409,7 @@
             </div>
             <span></span>
         </div>
+        <div class='t'>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                  <a href="" class="logo" ><span class="grey-color"> &lt;</span><span class="logo-name">Harshit</span><span class="grey-color">/&gt;</span></a><input class="menu-btn" type="checkbox" id="menu-btn"><label class="menu-icon" for="menu-btn" style="color: white;"><span class="navicon"></span></label>
@@ -490,7 +452,7 @@
                            and with Some Cool Stuffs!<br>
                         <div class="row" style="margin-left:25%">
                         <a class="nav-link" href="https://drive.google.com/file/d/1nn1AI623HbYNvDJa4LPsjR7Lq-ClSgb8/view?usp=sharing"><button id="ab" style="display: inline-block;">Resume</button></a> 
-                        <a class="nav-link" href="#"><button id="ab" style="display: inline-block;">Contact</button></a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/harshit-jain-809765166/"><button id="ab" style="display: inline-block;">Contact</button></a>
                         </div>
                         <ul class="dev-icons" >
                             <li class="software-skill-inline" name="C++"> <a href="https://www.linkedin.com/in/harshit-jain-809765166/" style="display: inline-block;"><img src="http://static1.squarespace.com/static/5a5290664c326dee8c40d241/5a52bd49ec212d62e309ea36/5c7413d0eef1a138875729d8/1551112912687/STAFFING+AGENCY+SOUTH+FLORIDA+.png?format=1500w"></a></li>
@@ -565,7 +527,7 @@
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
                           </span>   
-                          <h1><a href="#0" id="a">BlackPost</a></h1>
+                          <h1><a href="https://github.com/harshit-labs/Black-Post" id="a">BlackPost</a></h1>
                           <p id="p">This is a social media app which  is created by using django, django <br>rest framework, integrated with react. In this person can share<br> the views with ther followers..</p>   
                         </div>
                         <div class="col-md-2 card">
@@ -573,7 +535,7 @@
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
                           </span>
-                          <h1><a href="#0" id="a">NewsHunt</a></h1>
+                          <h1><a href="https://github.com/harshit-labs/NewsHunt" id="a">NewsHunt</a></h1>
                           <p id="p">This is a new app where you can find the latest and trending news in the<br> world. it fetches the json data from newsapi .</p>
                         </div>
                         <div class="col-md-3 card">
@@ -581,7 +543,7 @@
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
                           </span>
-                          <h1><a href="#0" id="a">Competitive Programming</a></h1>
+                          <h1><a href="https://github.com/harshit-labs/Competitive-programming" id="a">Competitive Programming</a></h1>
                           <p id="p">This is a repository of my Codechef and LeetCode Challenge Solution.</p>
                         </div>
                         <div class="col-md-2 card">
@@ -598,7 +560,7 @@
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i id="icon"class="fas fa-robot fa-stack-1x fa-inverse"></i>
                           </span>
-                          <h1><a href="#0" id="a" >More Projects</a></h1>
+                          <h1><a href="https://github.com/harshit-labs" id="a" >More Projects</a></h1>
                           <p id="p">For more projects click the card.</p>
                         </div>
                         </a>
@@ -692,7 +654,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Avatar">
+                            <img src="https://jessireel.files.wordpress.com/2009/11/kaggle-monster.png?w=640" alt="Avatar">
                           </div>
                           <div class="flip-card-back">
                             <button type="submit"><a href="#">Certifications</a></button>  
@@ -702,6 +664,12 @@
                     </div>
                 </li>
                 </ul>
+        </div>
+        <div class="main5" id="platform">
+            <h1 class="Platform">Platform</h1>
+            <div class="row">
+
+            </div>
         </div>
         <footer id="Contact">
             <div class="row">
@@ -721,6 +689,7 @@
                 </div>
             </div>
         </footer>
+        </div>
         <!-- <script>
         
         $(window).load(function() {
