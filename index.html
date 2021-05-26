@@ -9,397 +9,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         
       <link rel="stylesheet" type="text/css" href="loader.css"/>
+      <link rel="stylesheet" type="text/css" href="main.css"/>
       <script src="loader.js"></script>
-      <script src="load.js"></script>
-        <style>
-            @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
-            * {
-                margin: 2px;
-                padding: 0;
-                box-sizing: border-box;
-                box-sizing: inherit;
-            }
-            body {
-                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                display: block;
-                margin: 10px;
-            }
-            .t {
-                display:none;
-            }
-            .logo {
-                font-size: 20px;
-                position: absolute;
-                top:20px;
-                left: 40px;
-            }
-            #navbarSupportedContent {
-                align-content:right;
-                background-color: white; 
-                list-style-type: none;
-                position: absolute;
-                right:0px;
-                text-align: center;
-                margin: 0;
-                padding: 0;
-            }
-            .nav li {
-                display: inline-block;
-                list-style: none;
-                text-decoration: none;
-                font-size: 20px;
-                padding: 20px;
-            }
-            .nav li a{
-                text-decoration: none;
-            }
-            #ab {
-                background-color: #ffd105ab;
-                border: none;
-                color: rgb(68, 65, 65);
-                padding: 15px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                cursor: pointer;
-                box-sizing: border-box;
-                border-radius: 80px;
-                
-            }
-            #ab:hover {
-                transform: translatey(1rem);
-                transform: rotateY(-4deg);
-            transform: rotateZ(-4deg);
-            box-shadow: inset 2px 2px 2px hsl(10deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 45 74 / 25%);
-            background: linear-gradient(90deg,#131212ea;,#f3e7e7ea; 1px,#f3e7e7ea; 0,#f3e7e7ea;);
-            }
-            
-            img {
-                max-width: 100%;
-                max-height: auto;
-            }
-            #rep {
-                margin-left: 8%;
-                margin-top: 10%;
-                font-family: "Montserrat Alternates",sans-serif;
-                font-size:25px;
-            }
-            .big {
-                margin-left: 10%;
-                font-family: "Rock Salt",cursive;
-                font-size: 75px;
-            }
-            .skills-heading {
-                text-align: center;
-                font-size: 56px;
-                font-weight: 400;
-                padding: 20px;
-                font-family: "Graduate",cursive;
-                font-size: 40px;
-            }
-            .dev-icons {
-                text-align: center;
-            }
-            
-            .subTitle {
-                color: #868e96;
-            }
-            .skills-text {
-                text-align: center;
-                font-size: 23px;
-                font-family: "Long Cang",cursive;
-                padding: 10px;
-            }
-            img {
-                max-width: 100%;
-                max-height: auto;
-            }
-            .dev-icons li{
-                text-align: center;
-                list-style: none;
-                display: inline-block;
-                padding: 2px;
-                align-items: center;
-            }
-            .dev-icons li img {
-                height: 50px;
-                width: auto;
-                text-align: center;
-            }
-            .project-headings {
-                font-size: 400px;
-                font-weight: 500;
-                padding-top: 30%;
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 40px;
-            }
-            img {
-                max-width: 100%;
-                max-height: auto;
-            }
-            .project-text {
-                padding-top: 30px;
-                text-align: center;
-                font-size: 23px;
-                font-family: "Long Cang",cursive;
-                padding: 10px;
-            }
-            @import url('https://fonts.googleapis.com/css?family=Lobster');
-
-            .stackcard {
-                --bg-one: #973999;
-                --bg-two: #f8598b;
-                --bg-three: #f7bf00;
-                --bg-panel: #f3e7e7b7;
-                --color-headings: rgb(7, 6, 6);
-                --color-text: rgb(31, 29, 29);
-                --color-fun: #c44394;
-                --distance: 4rem;
-                background: var(--bg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url(https://image.freepik.com/free-vector/smooth-mesh-blurred-background-multi-color-gradient-pattern-smooth-modern-watercolor-style-backdrop_124894-147.jpg);
-                font-family: 'Lobster', Helvetica, Arial, sans-serif;
-                height: auto;
-                width: 100%;
-                display: grid;
-                place-items: center;
-                overflow: hidden;
-                margin: 0;
-                z-index: 1;
-            }
-      
-            .cards {
-                display: flex;
-                padding:2vw 2vw 2vw 3vw;
-            }
-
-            .card {
-                z-index: 1;
-                background: var(--bg-panel);
-                border-radius: 1vw;
-                padding: 2vw;
-                box-shadow: 4px 4px 12px 2px rgba(black, 0.60);
-                transition: 0.2s;
-            .fa-stack {
-                color: var(--color-fun);
-            }
-            .card a {
-                text-decoration: none;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color: var(--color-headings);
-                font-size: 0.5vw;
-            }
-            .card a p {
-                color: var(--color-text);
-                font-size: 0.4vw;
-                }
-            }
-
-            .card:not(:first-child) {
-            margin-left: calc(var(--distance)*-1);
-            }
-
-            .card:hover,
-            .card:focus-within {
-                background: #f3e7e7ea;
-            transform: translatey(-1rem);
-            transform: rotateZ(-4deg);
-            box-shadow: inset 2px 2px 2px hsl(10deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
-            background: linear-gradient(90deg,#f3e7e7ea;,#f3e7e7ea; 1px,#f3e7e7ea; 0,#f3e7e7ea;);
-
-            }
-
-            .card:hover ~ .card,
-            .card:focus-within ~ .card {
-            transform: translatex(var(--distance));
-            }
-            #a {
-                color:rgb(89, 93, 97);
-                text-decoration:None;
-                font-size: 2.9vw;
-            }
-            #p {
-                font-size: 0.9vw;
-            }
-
-            .fa-stack {
-            margin-left: -1rem;
-            }
-            @media(max-width: 768px) {
-                .cards {
-                    display: grid;
-                    max-width: 50%;
-                }
-                #a {
-                    color:rgb(89, 93, 97);
-                    text-decoration:None;
-                    font-size: 4vw;
-                }
-                #p {
-                    font-size: 2.5vw;
-                }
-                .card:not(:first-child) {
-            margin-left: calc(var(--distance)*0);
-            }
-            }
-            @media(max-width: 561px) {
-                .cards {
-                    display: grid;
-                    max-width: 50%;
-                   
-                }
-                #a {
-                color:rgb(89, 93, 97);
-                text-decoration:None;
-                font-size: 4vw;
-            }
-                #p {
-                font-size: 2.5vw;
-            }
-            .card:not(:first-child) {
-            margin-left: calc(var(--distance)*0);
-            }
-            }
-            .main4 {
-                align-items: center;
-                align-content: center;
-                text-align: center;
-            }
-            .main4 ul {
-                list-style: none;
-                display: inline;
-                align-items: center;
-                align-content: center;
-                text-align: center;
-            }
-            .main4 li {
-                text-align: center;
-                list-style: none;
-                display: inline-block;
-                align-items: center;
-                align-content: center;
-                text-align: center;
-            }
-            .flip-card {
-                background-color: transparent;
-                width: 15vw;
-                height: 15vw;
-                perspective: 1000px;
-                margin: 4vw;
-                margin-left: 0;
-                margin-bottom: 0vw;
-                box-sizing: border-box;
-                border-radius: 100px;
-            }
-            .flip-card-front img{
-                background-color: transparent;
-                width: 15vw;
-                height: 15vw;
-            }
-
-            .flip-card-inner {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                transition: transform 0.6s;
-                transform-style: preserve-3d;
-                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            }
-
-            .flip-card:hover .flip-card-inner {
-                 transform: rotateY(180deg); 
-            }
-
-            .flip-card-front, .flip-card-back {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                box-sizing: border-box;
-                border-radius: 4px;
-            }
-
-            .flip-card-front {
-                background-color: rgb(255, 255, 255);
-                color: black;
-            }
-
-            .flip-card-back {
-                background-color: white;
-                color: black;
-                transform: rotateY(180deg);
-            }
-            .main4 .col-md-2 {
-                margin-left:4vw;
-            }
-            .certifications {
-                padding-top: 4vw;
-                text-align: center;
-                font-size: 40px;
-                font-family:'Times New Roman', Times, serif;
-            }
-            @media(max-width: 768px) {
-                .flip-card {
-                background-color: white;
-                width: 30vw;
-                height: 30vw;
-                perspective: 1000px;
-                margin: 2vw;
-                padding: 2vw;
-                box-sizing: border-box;
-                border-radius: 100px;
-            }
-                .flip-card-front img{
-                    background-color: white;
-                    width: 30vw;
-                    height: 29vw;
-                }
-            }
-            @media(max-width: 561px) {
-                .flip-card {
-                    background-color: white;
-                    width: 35vw;
-                    height: 35vw;
-                    perspective: 1000px;
-                    margin: 2vw;
-                    padding: 2vw;
-                    box-sizing: border-box;
-                    border-radius: 100px;
-                }
-                .flip-card-front img{
-                    background-color: white;
-                    width: 35vw;
-                    height: 30vw;
-                }
-            }
-            footer {
-                margin-top:14vw;
-                margin-left:5vw;
-                margin-bottom: 4vw;
-            }
-            #foot-heading {
-                font-size: 40px;
-                align-content: center;
-                text-align: center;
-                font-family: Monoton;
-            }
-            .main .ui {
-                width: 10%;
-                height: 10%;
-                display: grid;
-
-            }
-            .main .ui .col-xs-2 {
-                display: grid;
-            }
-            
-        </style>
     </head>
     
     <body>
@@ -575,12 +186,15 @@
                 <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="https://consoleconnect.inter.scot/wp-content/uploads/2020/02/cloud-240-ibm-1.svg" alt="Avatar" >
+                          <div class="flip-card-front" style="background-image: url('https://consoleconnect.inter.scot/wp-content/uploads/2020/02/cloud-240-ibm-1.svg');">
+                            <div class="d">
+                           <p>Applied Data Science Capstone</p>
+                           </div>
                           </div>
                           <div class="flip-card-back">
-                            <button type="submit"><a href="#">Certifications</a></button>  
-                            <button type="submit"></button>
+                            <div class="d"> 
+                                <button type="submit"><a href="https://www.coursera.org/account/accomplishments/verify/NNTSPCEF6YSZ">Certifications</a></button>  
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -588,12 +202,15 @@
                 <li >
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="https://consoleconnect.inter.scot/wp-content/uploads/2020/02/cloud-240-ibm-1.svg" alt="Avatar" >
+                          <div class="flip-card-front" style="background-image: url('https://consoleconnect.inter.scot/wp-content/uploads/2020/02/cloud-240-ibm-1.svg');">
+                            <div class="d">
+                                <p>Data Analysis with Python</p>
+                            </div> 
                           </div>
                           <div class="flip-card-back">
-                            <button type="submit"><a href="#">Certifications</a></button>  
-                            <button type="submit"></button>
+                            <div class="d"> 
+                                <button type="submit"><a href="https://www.coursera.org/account/accomplishments/records/B9VVGRBFJHW3">Certifications</a></button>  
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -601,12 +218,16 @@
                 <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="https://edubard.in/media/media/deeplearning-ai-icon_x4etsnG.png" alt="Avatar" >
-                          </div>
+                          <div class="flip-card-front" style="background-image: url('http://coursera-university-assets.s3.amazonaws.com/b4/5cb90bb92f420b99bf323a0356f451/Icon.png');">
+                            <div class="d">
+                                <p>Neural Networks and Deep Learning</p>
+                                </div>  
+                        </div>
                           <div class="flip-card-back">
-                            <button type="submit"><a href="#">Certifications</a></button>  
-                            <button type="submit"></button>
+                            <div class="d"> 
+                                <button type="submit"><a href="https://www.coursera.org/account/accomplishments/certificate/6UMJH8M6YVC3">Certifications</a></button>  
+                           
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -614,12 +235,16 @@
                 <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="https://lemacksmedia.com/wp-content/uploads/2018/08/lockup_cloud_main.png" alt="Avatar" >
-                          </div>
+                          <div class="flip-card-front" style="background-image: url('https://lemacksmedia.com/wp-content/uploads/2018/08/lockup_cloud_main.png');">
+                            <div class="d">
+                                <p>Google Cloud Training Program</p>
+                            </div>  
+                        </div>
                           <div class="flip-card-back">
-                            <button type="submit"><a href="#">Certifications</a></button>  
-                            <button type="submit"></button>
+                            <div class="d"> 
+                                <button type="submit"><a href="https://www.qwiklabs.com/public_profiles/eaca07e9-485b-4d42-a1d3-76cbe2c79ad3">Certifications</a></button>  
+                      
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -627,12 +252,16 @@
                 <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="https://consoleconnect.inter.scot/wp-content/uploads/2020/02/cloud-240-ibm-1.svg" alt="Avatar" >
-                          </div>
+                          <div class="flip-card-front" style="background-image: url('https://consoleconnect.inter.scot/wp-content/uploads/2020/02/cloud-240-ibm-1.svg');">
+                            <div class="d">
+                                <p>Databases and SQL for Data Science</p>
+                            </div>  
+                        </div>
                           <div class="flip-card-back">
-                            <button type="submit"><a href="#">Certifications</a></button>  
-                            <button type="submit"></button>
+                            <div class="d"> 
+                                <button type="submit"><a href="https://www.coursera.org/account/accomplishments/records/4TSMNGRSLZGE">Certifications</a></button>  
+                                
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -640,12 +269,16 @@
                 <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="https://www.freelancinggig.com/blog/wp-content/uploads/2018/06/Google-Code-Jam-in-2018.jpg" alt="Avatar">
-                          </div>
+                          <div class="flip-card-front" style="background-image: url('https://lemacksmedia.com/wp-content/uploads/2018/08/lockup_cloud_main.png');">
+                            <div class="d">
+                                <p>Google Code Jam 2021</p>
+                            </div>  
+                        </div>
                           <div class="flip-card-back">
-                            <button type="submit"><a href="#">Certifications</a></button>  
-                            <button type="submit"></button>
+                            <div class="d"> 
+                                <button type="submit"><a href="https://codingcompetitions.withgoogle.com/codejam/certificate/summary/00000000004360f1">Certifications</a></button>  
+                          
+                                </div>
                           </div>
                         </div>
                       </div>
@@ -653,12 +286,15 @@
                 <li>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="https://jessireel.files.wordpress.com/2009/11/kaggle-monster.png?w=640" alt="Avatar">
-                          </div>
+                          <div class="flip-card-front" style="background-image: url('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-512.png');">
+                            <div class="d">
+                                <p>Intro  to  Machine Learning</p>
+                            </div>  
+                        </div>
                           <div class="flip-card-back">
-                            <button type="submit"><a href="#">Certifications</a></button>  
-                            <button type="submit"></button>
+                          <div class="d"> 
+                            <button type="submit"><a href="https://www.kaggle.com/learn/certification/harshit2708/intro-to-machine-learning/">Certifications</a></button>  
+                            </div>
                           </div>
                         </div>
                     </div>
@@ -666,10 +302,33 @@
                 </ul>
         </div>
         <div class="main5" id="platform">
-            <h1 class="Platform">Platform</h1>
-            <div class="row">
-
-            </div>
+            <h1 class="Platform">Other Profiles...</h1>
+            <ul>
+                <li id="plat"> 
+                <div class="container">
+                    <img src="https://miro.medium.com/max/333/1*1W0-bbmt4iiEpp_pPrS0VQ.png" alt="Avatar" class="image" style="width:100%">
+                    <div class="middle">
+                        <a href=""><div class="text">Click</div></a>
+                    </div>
+                </div>
+                </li>
+                <li id="plat"> 
+                  <div class="container">
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--IU3noOCo--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/i/9da6rnlxgxq8fv8degu4.png" alt="Avatar" class="image" style="width:100%">
+                    <div class="middle">
+                      <a href=""><div class="text">Click</div></a>
+                    </div>
+                  </div>
+                </li>
+                <li id="plat"> 
+                  <div class="container">
+                    <img src="https://pathrise-website-guide-wp.s3.us-west-1.amazonaws.com/guides/wp-content/uploads/2019/05/22174532/hackerrank-logo.jpg" alt="Avatar" class="image" style="width:100%">
+                    <div class="middle">
+                        <a href=""><div class="text">Click</div></a>
+                    </div>
+                  </div>
+                </li>
+            </ul>
         </div>
         <footer id="Contact">
             <div class="row">
@@ -690,11 +349,13 @@
             </div>
         </footer>
         </div>
-        <!-- <script>
+
+        <script>
         
         $(window).load(function() {
-            $('.loader').fadeOut(16000);
+            $('.loader').hide();
+            $('.t').css("display","block");
          });
-        </script>  -->
+        </script> 
     </body>
 </html>
