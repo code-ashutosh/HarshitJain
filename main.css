@@ -11,6 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     display: block;
     margin: 10px;
+    color: rgb(54, 51, 51);
 }
 .t {
     display:none;
@@ -451,8 +452,8 @@ margin-left: calc(var(--distance)*0);
         text-decoration: var(--bg-one);
     }
     .flip-card-front .d {
-        -webkit-transform: translateY(-40%) translateZ(3vw) scale(0.94);
-          transform: translateY(-40%) translateZ(3vw) scale(0.94);
+        -webkit-transform: translateY(-40%) translateZ(3.5vw) scale(0.94);
+          transform: translateY(-40%) translateZ(3.5vw) scale(0.94);
           background-color: transparent;
             left: 0;
             width: 100%;
@@ -510,8 +511,8 @@ margin-left: calc(var(--distance)*0);
         text-decoration: var(--bg-one);
     }
     .flip-card-front .d {
-        -webkit-transform: translateY(-40%) translateZ(3vw) scale(0.94);
-          transform: translateY(-40%) translateZ(3vw) scale(0.94);
+        -webkit-transform: translateY(-40%) translateZ(3.5vw) scale(0.94);
+          transform: translateY(-40%) translateZ(3.5vw) scale(0.94);
           background-color: transparent;
             left: 0;
             width: 100%;
